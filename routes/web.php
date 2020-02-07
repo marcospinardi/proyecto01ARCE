@@ -23,3 +23,10 @@ Route::get('/fruta', function(){
 Route::get('/adminMarcas', 'MarcasController@index');
 Route::get('/formAgregarMarca', 'MarcasController@create');
 Route::post('/agregarMarca', 'MarcasController@store');
+
+############# CATEGORIAS  ############
+
+############# PRODUCTOS  ############
+Route::get('/adminProductos', 'ProductosController@index');
+Route::get('/formAgregarProducto', 'ProductosController@create');
+
