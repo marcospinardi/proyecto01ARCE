@@ -30,3 +30,7 @@ Route::post('/agregarMarca', 'MarcasController@store');
 Route::get('/adminProductos', 'ProductosController@index');
 Route::get('/formAgregarProducto', 'ProductosController@create');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

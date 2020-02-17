@@ -40,10 +40,15 @@ class MarcasController extends Controller
     public function store(Request $request)
     {
         //
+        $validacion = $request->validate(
+            [
+                'mkNombre' => 'required|min:3|max:75'
+            ]);
+
         $Marca = new Marca;
         $mkNombre = $request->mkNombre;
         $Marca->mkNombre = $mkNombre;
-        $Marca->save();
+        //$Marca->save();
     }
 
     /**

@@ -11,6 +11,7 @@
             Marca:
             <br>
             <input type="text" name="mkNombre" class="form-control">
+           @error('mkNombre') {{$message}} @enderror
             <br>
             <button class="btn btn-dark">Agregar Marca</button>
 
